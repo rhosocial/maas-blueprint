@@ -102,6 +102,7 @@ plugins:
         - en
 
 markdown_extensions:
+  # Mermaid 由 Material 在运行时从 unpkg 加载；如需完全离线，可按主题文档本地化。
   - admonition
   - attr_list
   - def_list

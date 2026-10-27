@@ -35,6 +35,9 @@ python -m venv .venv-docs
 .venv-docs\Scripts\mkdocs build
 ```
 
+发布：仓库推送到 GitHub 后，在 `Settings → Pages → Build and deployment` 把 Source 设为
+**GitHub Actions**。之后每次 push 到 `main`，`.github/workflows/pages.yml` 会自动构建并发布。
+
 ## 仓库结构
 
 ```
