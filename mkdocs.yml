@@ -4,7 +4,7 @@ site_url: https://dev.rho.social/maas-blueprint/
 repo_url: https://github.com/rhosocial/maas-blueprint
 repo_name: rhosocial/maas-blueprint
 edit_uri: edit/main/docs/
-copyright: Copyright &copy; 2026 rhosocial · 文档 CC BY 4.0 · 代码示例 Apache-2.0
+copyright: Copyright &copy; 2026 rhosocial · <a href="/maas-blueprint/privacy/">隐私说明</a> · 文档 CC BY 4.0 · 代码示例 Apache-2.0
 
 theme:
   name: material
@@ -94,6 +94,7 @@ nav:
       - "D 指标字典": 附录/D-指标字典.md
       - "E 待核验事实清单": 附录/E-待核验清单.md
   - "章节速览": outline.md
+  - "隐私说明": privacy.md
 
 plugins:
   - search:
@@ -129,8 +130,14 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/baidu-tongji.js
+
 extra:
   generator: false
+  analytics:
+    provider: google
+    property: G-VPM29QVEST
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/rhosocial/maas-blueprint
