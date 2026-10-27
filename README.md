@@ -2,7 +2,7 @@
 
 > 商业化多模态 MaaS 的参考蓝本：从 GPU 集群到可售卖的服务。
 
-**在线阅读：<https://rhosocial.github.io/maas-blueprint/>**
+**在线阅读：<https://dev.rho.social/maas-blueprint/>**
 
 这是一份面向所有建设 MaaS 团队的参考蓝本，不是规范。书中的架构、参数、价格、流程都是
 参考解，团队应结合自己的客户结构、成本、合规属地与团队规模做决策。

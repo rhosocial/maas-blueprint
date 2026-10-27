@@ -1,6 +1,6 @@
 site_name: MaaS Blueprint
 site_description: 商业化多模态 MaaS 的参考蓝本：从 GPU 集群到可售卖的服务
-site_url: https://rhosocial.github.io/maas-blueprint/
+site_url: https://dev.rho.social/maas-blueprint/
 repo_url: https://github.com/rhosocial/maas-blueprint
 repo_name: rhosocial/maas-blueprint
 edit_uri: edit/main/docs/
