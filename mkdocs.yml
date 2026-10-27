@@ -1,0 +1,136 @@
+site_name: MaaS Blueprint
+site_description: 商业化多模态 MaaS 的参考蓝本：从 GPU 集群到可售卖的服务
+site_url: https://rhosocial.github.io/maas-blueprint/
+repo_url: https://github.com/rhosocial/maas-blueprint
+repo_name: rhosocial/maas-blueprint
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2026 rhosocial · 文档 CC BY 4.0 · 代码示例 Apache-2.0
+
+theme:
+  name: material
+  language: zh
+  font: false
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+nav:
+  - "首页": index.md
+  - "前言": 00-前言.md
+  - "第一篇 · 定位与约束":
+      - "01 MaaS 是什么、不是什么": part1-定位/01-MaaS是什么.md
+      - "02 三类负载与两种时间尺度": part1-定位/02-三类负载.md
+      - "03 单位经济学：一张卡能卖多少钱": part1-定位/03-单位经济学.md
+      - "04 合规是架构约束，不是上线前的手续": part1-定位/04-合规约束.md
+      - "05 总体架构：一个控制面，多个数据面": part1-定位/05-总体架构.md
+  - "第二篇 · 基础设施":
+      - "06 集群、网络与存储": part2-基础设施/06-集群网络存储.md
+      - "07 节点验收与基准测试": part2-基础设施/07-节点验收.md
+      - "08 资源模型、配额与优先级": part2-基础设施/08-资源模型.md
+      - "09 权重、镜像与制品分发": part2-基础设施/09-制品分发.md
+  - "第三篇 · 训练底座":
+      - "10 调度：Gang、队列与拓扑": part3-训练底座/10-调度.md
+      - "11 弹性、抢占与 checkpoint": part3-训练底座/11-弹性与检查点.md
+      - "12 故障闭环与慢节点": part3-训练底座/12-故障闭环.md
+      - "13 训练可观测与潮汐混部": part3-训练底座/13-可观测与混部.md
+  - "第四篇 · 推理平台":
+      - "14 部署规格：从 profiling 到规格卡": part4-推理平台/14-部署规格.md
+      - "15 引擎选型与自研架构适配": part4-推理平台/15-引擎选型.md
+      - "16 路由：缓存感知与队列感知": part4-推理平台/16-路由.md
+      - "17 PD 分离与 KV 缓存分层": part4-推理平台/17-PD分离与KV缓存.md
+      - "18 弹性、冷启动与发布治理": part4-推理平台/18-弹性与发布.md
+      - "19 优雅退出与过载保护": part4-推理平台/19-优雅退出.md
+  - "第五篇 · 多模态数据面":
+      - "20 LLM 数据面": part5-多模态/20-LLM数据面.md
+      - "21 图像数据面": part5-多模态/21-图像数据面.md
+      - "22 视频数据面": part5-多模态/22-视频数据面.md
+      - "23 多模态理解与内容处理": part5-多模态/23-多模态理解.md
+  - "第六篇 · 任务系统":
+      - "24 任务模型与状态机": part6-任务系统/24-任务模型.md
+      - "25 租约、拉取与背压": part6-任务系统/25-租约与背压.md
+      - "26 交付、回调与对账": part6-任务系统/26-交付与回调.md
+      - "27 计费联动：预扣、退款与幂等": part6-任务系统/27-计费联动.md
+  - "第七篇 · 产品化与运营":
+      - "28 模型目录与准入": part7-产品化/28-模型目录.md
+      - "29 API 产品面与版本策略": part7-产品化/29-API产品面.md
+      - "30 身份、租户与密钥": part7-产品化/30-身份与租户.md
+      - "31 限流、公平与配额": part7-产品化/31-限流与公平.md
+      - "32 计量、账单与 SLO": part7-产品化/32-计量与SLO.md
+  - "第八篇 · 安全与合规":
+      - "33 内容安全与多模态审核": part8-安全合规/33-内容安全.md
+      - "34 生成内容标识与水印": part8-安全合规/34-内容标识.md
+      - "35 数据安全、缓存隔离与备案工程化": part8-安全合规/35-数据与备案.md
+  - "第九篇 · 运营与实施":
+      - "36 可观测体系与指标字典": part9-实施/36-可观测.md
+      - "37 容量、成本与优化排序": part9-实施/37-容量与成本.md
+      - "38 路线图：四阶段与验收标准": part9-实施/38-路线图.md
+      - "39 组织、风险与决策记录": part9-实施/39-组织与风险.md
+  - "附录":
+      - "A 术语表": 附录/A-术语表.md
+      - "B 模板：部署规格卡 / 任务契约 / ADR": 附录/B-模板.md
+      - "C 上线检查清单": 附录/C-检查清单.md
+      - "D 指标字典": 附录/D-指标字典.md
+      - "E 待核验事实清单": 附录/E-待核验清单.md
+  - "章节速览": outline.md
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/rhosocial/maas-blueprint
+      name: GitHub

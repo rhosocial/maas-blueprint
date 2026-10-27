@@ -1,0 +1,23 @@
+/* 中文优先的系统字体栈；不依赖外部字体 CDN */
+:root {
+  --md-text-font: "Noto Sans SC", "Source Han Sans SC", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  --md-code-font: "JetBrains Mono", "Cascadia Code", "Source Code Pro",
+    Consolas, "Courier New", monospace;
+}
+
+/* 正文行距略放宽，长文阅读更稳 */
+.md-typeset {
+  line-height: 1.75;
+}
+
+/* 表格在窄屏下可横向滚动，避免撑破布局 */
+.md-typeset__table {
+  overflow-x: auto;
+}
+
+/* Mermaid 图居中，留出呼吸空间 */
+.md-typeset .mermaid {
+  margin: 1.5rem 0;
+  text-align: center;
+}

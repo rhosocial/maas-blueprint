@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- 增加 MkDocs Material 站点与 GitHub Pages 部署工作流。
+- 书稿迁入 `docs/`，根 `README.md` 改为仓库入口。
+- 站点启用中文搜索、浅色/深色主题与 Mermaid 渲染。
+
 ## v0.1 — 2026-10-27
 
 首个公开蓝本。
