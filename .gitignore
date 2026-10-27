@@ -1,0 +1,28 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*~
+
+# Node / site build
+node_modules/
+site/.vitepress/dist/
+site/.vitepress/cache/
+site/build/
+site/public/.cache/
+
+# Python (for any helper scripts)
+__pycache__/
+*.pyc
+.venv*/
+venv/
+
+# Logs and temp
+*.log
+*.tmp
+.cache/
